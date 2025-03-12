@@ -11,7 +11,9 @@ const config = {
 	kit: {
 		adapter: adapter()
 	},
-
+	alias: {
+		"@/*": "./path/to/lib/*",
+	},
 	extensions: ['.svelte', '.svx']
 };
 
