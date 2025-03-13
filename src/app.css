@@ -1,78 +1,77 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
 @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-
+ 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-
+ 
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-
+ 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
-
+ 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-
+ 
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
-
+ 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
-
+ 
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
-
+ 
     --destructive: 0 72.2% 50.6%;
     --destructive-foreground: 210 40% 98%;
-
+ 
     --ring: 222.2 84% 4.9%;
-
+ 
     --radius: 0.5rem;
   }
-
+ 
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-
+ 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-
+ 
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-
+ 
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
-
+ 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-
+ 
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
-
+ 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
-
+ 
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
-
+ 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
+ 
     --ring: 212.7 26.8% 83.9%;
   }
 }
-
+ 
 @layer base {
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
   }
@@ -80,23 +79,23 @@
 
 
 .main {
-  width: 100%;
-  height: 100vh;
-  --s: 140px;
-  /* control the size */
-  --c1: #d14ff5;
-  --c2: #ffbe40;
+    width: 100%;
+    height: 100vh;
+    --s: 140px;
+    /* control the size */
+    --c1: #ab3e5b;
+    --c2: #ffbe40;
 
-  --_g: #0000 25%, #0008 47%, var(--c1) 53% 147%, var(--c2) 153% 247%,
-    var(--c1) 253% 347%, var(--c2) 353% 447%, var(--c1) 453% 547%, #0008 553%,
-    #0000 575%;
-  --_s: calc(25% / 3) calc(25% / 4) at 50%;
-  background: radial-gradient(var(--_s) 100%, var(--_g)),
-    radial-gradient(var(--_s) 100%, var(--_g)) calc(var(--s) / 2) calc(3 * var(--s) / 4),
-    radial-gradient(var(--_s) 0, var(--_g)) calc(var(--s) / 2) 0,
-    radial-gradient(var(--_s) 0, var(--_g)) 0 calc(3 * var(--s) / 4),
-    repeating-linear-gradient(90deg,
-      #accec0 calc(25% / -6) calc(25% / 6),
-      #61a6ab 0 calc(25% / 2));
-  background-size: var(--s) calc(3 * var(--s) / 2);
+    --_g: #0000 25%, #0008 47%, var(--c1) 53% 147%, var(--c2) 153% 247%,
+        var(--c1) 253% 347%, var(--c2) 353% 447%, var(--c1) 453% 547%, #0008 553%,
+        #0000 575%;
+    --_s: calc(25% / 3) calc(25% / 4) at 50%;
+    background: radial-gradient(var(--_s) 100%, var(--_g)),
+        radial-gradient(var(--_s) 100%, var(--_g)) calc(var(--s) / 2) calc(3 * var(--s) / 4),
+        radial-gradient(var(--_s) 0, var(--_g)) calc(var(--s) / 2) 0,
+        radial-gradient(var(--_s) 0, var(--_g)) 0 calc(3 * var(--s) / 4),
+        repeating-linear-gradient(90deg,
+            #accec0 calc(25% / -6) calc(25% / 6),
+            #61a6ab 0 calc(25% / 2));
+    background-size: var(--s) calc(3 * var(--s) / 2);
 }

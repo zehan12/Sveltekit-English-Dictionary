@@ -1,10 +1,29 @@
 <script lang="ts">
-	import { Button } from '$lib/components/ui/button/index.js';
+	import {
+		Card,
+		CardContent,
+		CardDescription,
+		CardFooter,
+		CardHeader,
+		CardTitle
+	} from '$lib/components/ui/card';
 </script>
 
 <main class="main flex items-center justify-center">
 	<section>
-		<h1 class="bg-pink-400 p-3 text-3xl font-bold text-purple-500 underline">Hello World</h1>
-		<Button>Button</Button>
+		<Card class="mx-auto w-full max-w-md">
+			<CardHeader>
+				<CardTitle class="flex items-center gap-2 text-3xl font-bold text-zinc-700">
+					📔 English Dictionary
+				</CardTitle>
+				<CardDescription>
+					Explore the world of words together.
+				</CardDescription>
+			</CardHeader>
+			<CardContent>
+
+			</CardContent>
+			<CardFooter class="flex flex-col"></CardFooter>
+		</Card>
 	</section>
 </main>
