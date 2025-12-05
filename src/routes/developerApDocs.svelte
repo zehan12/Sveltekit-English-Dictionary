@@ -43,7 +43,7 @@
 		<h1>Developer API</h1>
 
 		<p class="description">
-			Use the API to programmatically retrieve definitions and details for English words:
+			A simple, open public API to retrieve definitions, phonetics, and audio for English words.
 		</p>
 
 		<div class="code-block endpoint">
@@ -146,14 +146,14 @@
 		font-weight: 600;
 		margin-top: 0.3em;
 		margin-bottom: 0.5rem;
-		color: #fff; /* Pink color from the image */
+		color: #fff;
 	}
 
 	.description,
 	.section-title,
 	.note {
 		font-size: 0.8rem;
-		line-height: 1;
+		line-height: 1.4;
 		margin-bottom: 1rem;
 	}
 
