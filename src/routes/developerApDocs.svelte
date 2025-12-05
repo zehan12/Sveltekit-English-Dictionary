@@ -3,7 +3,7 @@
 	import { toast } from 'svelte-sonner';
 
 	// API details
-	let apiEndpoint = 'https://is-odd-api.mewtru.com/v1/numbers/{number}';
+	let apiEndpoint = 'https://english-dictionary-vert.vercel.app/api/v1/words/{word}';
 
 	// Modal state
 	let showResponseModal = false;

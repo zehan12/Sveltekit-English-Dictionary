@@ -77,8 +77,27 @@
 
 				<div class="h-fit overflow-auto rounded-2xl p-4 text-black sm:h-[69vh]">
 					{#if !$apiResult && !$error && !$isLoading}
-						<div class="mt-10 text-center text-black">
-							<p class="text-sm">Start by typing a word to get its meaning and pronunciation.</p>
+						<div class="mt-10 flex flex-col items-center justify-center text-center text-black">
+							<div class="mb-4 rounded-full bg-gray-100 p-6">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="48"
+									height="48"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="text-gray-400"
+								>
+									<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+								</svg>
+							</div>
+							<h3 class="mb-2 text-xl font-semibold text-gray-800">Start your search</h3>
+							<p class="max-w-xs text-sm text-gray-500">
+								Type a word in the search box above to discover its meaning, phonetics, and usage.
+							</p>
 						</div>
 					{/if}
 
